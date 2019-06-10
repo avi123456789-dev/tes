@@ -1,10 +1,10 @@
 var db = firebase.firestore();
 
 function storeData(){
-    db.collection("users").add({
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
+    db.collection("java").add({
+    q_no: 1311110002,
+    code : "file.txt"
+    
 })
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
