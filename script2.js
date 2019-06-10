@@ -1,9 +1,10 @@
 var db = firebase.firestore();
 
 function storeData(){
-    db.collection("java").add({
-    q_no: 1311110002,
-    code : "file.txt"
+     db.collection("java").add({
+    first: "Adsdadadsada",
+    last: "Lovelace",
+    born: 1815
     
 })
 .then(function(docRef) {
