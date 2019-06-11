@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     
 </head>
-<body>
+<body onload="fun_c()">
     
     <div class = "lang_select">
         <div class = "txt1">
@@ -26,7 +26,8 @@
     <div class = "search_bar">
           <input type="text" name="questionNo" class="search_bar_txt" placeholder="Question No." id = "q_no"><br>
           
-          <button class = "code_btn" id = "code_btn" onclick="storeData()">Get Code</button>
+        <button class = "code_btn" id = "code_btn" onclick="storeData()">Get Code</button>
+               
     </div>
 <!--
     <div class = "popup" id = "popup">
@@ -36,13 +37,26 @@
     </div>
 -->
     
+    <div class= "outputContent">
+    
+        <div class="opFiles">
+            
+        </div>
+    
+    </div>
+     <button class = "code_btn1" id = "code_btn" onclick="getData()"> Code</button>
+        <div id = "files_list">
+    
+        </div>
+        
+    
     <div class = "footer">
     
         <p class = "brand_name">#Anon</p>
     
     </div>
     
-   
+<!-- Firebase Connection Section Start  -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
@@ -60,6 +74,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+    
+<!-- Firebase Connection Section End   -->
     <script src = "script.js"></script>
     <script src = "script2.js"></script>
 </body>
