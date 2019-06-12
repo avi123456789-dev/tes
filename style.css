@@ -5,6 +5,26 @@ button:focus {
     outline: none;
 }
 
+/*
+.lang_btn {
+    display: inline-block;
+    width: 25px;
+}
+
+@media screen and (max-width: 420px) {
+  div {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div {
+     width: 20%;
+  }
+}
+*/
+
+
 a {
     
     text-decoration: none;
@@ -162,4 +182,46 @@ body {
 .code-btn1 {
     position: absolute;
     top: 100%;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    top: 250%;
+    left: 15%;
+    
+}
+
+.error_txt {
+     font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    
+}
+
+.opFiles {
+     font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    position: fixed;
+    left: 2%;
+}
+
+.close {
+  color: #aaa;
+  position: relative;
+    right: -50%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filesText {
+    color: black;
+    text-decoration: underline;
+    
 }
