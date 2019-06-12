@@ -50,7 +50,8 @@ function getData(){
         manipulateFiles(files_Array);
         for(var i = 0 ; i < fileArr.length ; i++){
             console.log(fileArr.length);
-        document.getElementById("opFiles").innerHTML += '<li><a class = "filesText" href = "code/elabJava/' + q + '/' + fileArr[i] + '">' + fileArr[i] + '</a></li>';
+            document.getElementById("files_list").innerHTML += '<a href = "code/' + files_Array + '">link</a>';
+//        document.getElementById("opFiles").innerHTML += '<li><a class = "filesText" href = "code/elabJava/' + q + '/' + fileArr[i] + '">' + fileArr[i] + '</a></li>';
         }
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
@@ -59,7 +60,7 @@ function getData(){
             
         }
         // github
-//        document.getElementById("files_list").innerHTML += '<a href = "code/' + files_Array + '">link</a>';
+        document.getElementById("files_list").innerHTML += '<a href = "code/' + files_Array + '">link</a>';
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
